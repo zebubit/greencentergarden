@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Center Garden · Paisagismo e Floricultura em Uberaba-MG</title>
+<meta name="description" content="Green Center Garden: plantas no atacado e varejo, flores, árvores frutíferas, vasos, insumos e paisagismo em Uberaba-MG. Tudo para o seu jardim.">
+<meta name="theme-color" content="#1b5e20">
+<link rel="canonical" href="https://greencentergarden.com.br/">
+<meta property="og:title" content="Green Center Garden · Tudo para o seu jardim">
+<meta property="og:description" content="Plantas no atacado e varejo, flores, árvores frutíferas e paisagismo em Uberaba-MG.">
+<meta property="og:image" content="logo.png">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"Green Center Garden","image":"https://greencentergarden.com.br/logo.png","telephone":"+5534999367452","address":{"@type":"PostalAddress","streetAddress":"Av. João XXIII, 2560 - Pq. das Américas","addressLocality":"Uberaba","addressRegion":"MG","addressCountry":"BR"},"areaServed":"Uberaba"}
+</script>
+<style>
+  :root{
+    --green:#2e7d32; --green-d:#1b5e20; --green-deep:#0f3d24; --leaf:#8bc34a;
+    --cream:#f6f3ea; --ink:#26312a; --mut:#5e6d63; --line:rgba(27,94,32,.14);
+    --serif:'Fraunces',Georgia,serif; --sans:'Nunito Sans',system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;color:var(--green-deep)}
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 6vw}
+  section{padding:clamp(3.5rem,8vw,6rem) 0}
+  .eyebrow{font-family:var(--sans);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:var(--green)}
+  .lead{font-size:1.12rem;color:var(--mut);max-width:60ch}
+  .center{text-align:center}
+  .divider{width:60px;height:2px;background:linear-gradient(90deg,transparent,var(--leaf),transparent);margin:1.2rem auto}
+  .btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:1rem;padding:1rem 2rem;border-radius:50px;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+  .btn-green{background:var(--green-d);color:#fff;box-shadow:0 10px 28px rgba(27,94,32,.28)}
+  .btn-green:hover{background:var(--green);transform:translateY(-2px)}
+  .btn-out{background:#fff;color:var(--green-d);border:1.5px solid var(--green)}
+  .btn-out:hover{transform:translateY(-2px)}
+
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.7rem 6vw;transition:background .3s,box-shadow .3s;transform:translateZ(0)}
+  .nav.scrolled{background:rgba(246,243,234,.96);box-shadow:0 1px 0 var(--line)}
+  .nav .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--serif);font-weight:600;font-size:1.2rem;color:var(--green-deep)}
+  .nav .brand img{width:42px;height:42px;border-radius:50%;background:#fff}
+  .nav-links{display:flex;align-items:center;gap:1.8rem;list-style:none}
+  .nav-links a{font-size:.92rem;color:var(--ink);font-weight:600}
+  .nav-links a:hover{color:var(--green)}
+  .nav-cta{padding:.55rem 1.2rem !important;font-size:.86rem !important}
+  @media(max-width:860px){.nav-links li:not(.keep){display:none}}
+
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;
+    background:radial-gradient(120% 70% at 80% 10%, #e7f0e1 0%, #f6f3ea 50%, #eef3e8 100%)}
+  .hero .leaf{position:absolute;opacity:.5;color:var(--leaf)}
+  .hero .l1{top:12%;right:6%;width:160px}.hero .l2{bottom:8%;left:4%;width:120px;color:var(--green)}
+  .hero-inner{position:relative;z-index:2;max-width:680px}
+  .hero h1{font-size:clamp(2.5rem,6vw,4.4rem);margin:1rem 0 1.3rem}
+  .hero h1 em{font-style:italic;color:var(--green)}
+  .hero .actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:2rem}
+  .hero .badges{display:flex;gap:1.6rem;margin-top:2.4rem;flex-wrap:wrap}
+  .hero .badge{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--green-d);font-weight:600}
+  .hero .badge svg{width:20px;height:20px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.4rem;margin-top:3rem}
+  .scard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:2rem 1.7rem;box-shadow:0 6px 18px rgba(27,94,32,.06);transition:transform .25s,box-shadow .25s}
+  .scard:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(27,94,32,.14)}
+  .scard .ic{width:54px;height:54px;border-radius:14px;background:#eef5e8;display:grid;place-items:center;margin-bottom:1rem}
+  .scard .ic svg{width:28px;height:28px;color:var(--green-d)}
+  .scard h3{font-size:1.25rem;margin-bottom:.4rem}
+  .scard p{font-size:.94rem;color:var(--mut)}
+
+  .band{background:linear-gradient(135deg,#1b5e20,#0f3d24);color:#fff;text-align:center}
+  .band h2{color:#fff}
+  .band .lead{color:rgba(255,255,255,.85);margin:1rem auto 0}
+  .band .actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
+  .band .btn-green{background:#fff;color:var(--green-d)}
+  .band .btn-out{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(27,94,32,.1)}
+  .contact-grid .info{padding:clamp(2rem,4vw,3rem)}
+  .contact-grid .rows{margin:1.6rem 0;display:flex;flex-direction:column;gap:1rem}
+  .contact-grid .row{display:flex;gap:.8rem;align-items:flex-start;font-size:.97rem;color:var(--ink)}
+  .contact-grid .row svg{width:20px;height:20px;color:var(--green);flex-shrink:0;margin-top:3px}
+  .contact-grid .map{min-height:340px}
+  .contact-grid .map iframe{width:100%;height:100%;border:0;filter:saturate(1.05)}
+
+  footer{background:var(--green-deep);color:rgba(255,255,255,.7);padding:3rem 6vw 2rem;text-align:center}
+  footer .fbrand{display:flex;align-items:center;gap:.6rem;justify-content:center;font-family:var(--serif);font-size:1.3rem;color:#fff;margin-bottom:.8rem}
+  footer .fbrand img{width:40px;height:40px;border-radius:50%;background:#fff}
+  footer .flinks{display:flex;gap:1.4rem;justify-content:center;flex-wrap:wrap;margin:1rem 0;font-size:.9rem}
+  footer .flinks a:hover{color:var(--leaf)}
+  footer .zeb{font-size:.78rem;color:rgba(255,255,255,.5);margin-top:1rem}
+  footer .zeb a{color:var(--leaf);font-weight:700}
+
+  .wa-float{position:fixed;bottom:22px;right:22px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 28px rgba(37,211,102,.45);z-index:90;transition:.25s}
+  .wa-float:hover{transform:scale(1.08)} .wa-float svg{width:32px;height:32px;fill:#fff}
+  @media(max-width:760px){.contact-grid{grid-template-columns:1fr}.contact-grid .map{order:2;min-height:280px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="#" class="brand"><img src="logo.png" alt="Green Center Garden">Green Center Garden</a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#oferta">O que vendemos</a></li>
+    <li><a href="#contato">Onde estamos</a></li>
+    <li><a href="/bio">Links</a></li>
+    <li class="keep"><a class="btn btn-green nav-cta" href="https://wa.me/5534999367452?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <svg class="leaf l1" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8C8 10 5.9 16.2 4 22c1.5-3 4.5-5 9-5 6-1 9-6 9-12 0-1-.1-2-.3-3C18 4 14 5 12 7c-1.5 1.5-1.7 4-1 6"/></svg>
+  <svg class="leaf l2" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8C8 10 5.9 16.2 4 22c1.5-3 4.5-5 9-5 6-1 9-6 9-12 0-1-.1-2-.3-3C18 4 14 5 12 7c-1.5 1.5-1.7 4-1 6"/></svg>
+  <div class="wrap"><div class="hero-inner">
+    <span class="eyebrow">Paisagismo · Floricultura · Uberaba-MG</span>
+    <h1>Tudo para o seu <em>jardim</em>, em um só lugar.</h1>
+    <p class="lead">Plantas no atacado e varejo, flores, árvores frutíferas, vasos e insumos. E o projeto de paisagismo que transforma o seu espaço.</p>
+    <div class="actions">
+      <a class="btn btn-green" href="https://wa.me/5534999367452?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento</a>
+      <a class="btn btn-out" href="#contato">Como chegar</a>
+    </div>
+    <div class="badges">
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Atacado e varejo</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Entrega na região</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Projetos de paisagismo</span>
+    </div>
+  </div></div>
+</header>
+
+<section id="sobre">
+  <div class="wrap center">
+    <span class="eyebrow">Quem somos</span>
+    <h2 style="margin-top:1rem">Mais de uma vida cuidando do verde</h2>
+    <div class="divider"></div>
+    <p class="lead" style="margin:0 auto">A Green Center Garden é uma empresa de paisagismo e floricultura em Uberaba-MG. Trabalhamos com plantas no atacado e no varejo, levando qualidade e variedade para casas, empresas e projetos. Aqui você encontra desde uma muda para a janela até tudo o que precisa para um grande jardim.</p>
+  </div>
+</section>
+
+<section id="oferta" style="background:#fff">
+  <div class="wrap center">
+    <span class="eyebrow">O que você encontra</span>
+    <h2 style="margin-top:1rem">Tudo para o seu verde</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="wrap"><div class="grid">
+    <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22c5-2 8-6 8-12 0-1-.1-2-.3-3-3.7.5-7.7 1.5-9.7 3.5-1.5 1.5-1.7 4-1 6"/><path d="M12 22V8"/></svg></div><h3>Plantas Ornamentais</h3><p>Folhagens e plantas para deixar qualquer ambiente vivo e bonito.</p></div>
+    <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 9V4M12 15v5M9 12H4M15 12h5M7 7l-2-2M17 7l2-2M7 17l-2 2M17 17l2 2"/></svg></div><h3>Flores</h3><p>Flores e arranjos para alegrar, presentear e decorar.</p></div>
+    <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="9" r="4"/><path d="M9 13v8M6 18l3-2 3 2"/><circle cx="17" cy="7" r="2"/></svg></div><h3>Árvores Frutíferas</h3><p>Mudas de frutíferas para o seu pomar, do limão à manga.</p></div>
+    <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 8h12l-1.5 11a2 2 0 0 1-2 2H9.5a2 2 0 0 1-2-2L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></div><h3>Vasos e Cachepôs</h3><p>Vasos de todos os tamanhos e estilos para suas plantas.</p></div>
+    <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h18M3 6h18M3 18h18"/></svg></div><h3>Insumos e Substratos</h3><p>Terra, adubo e tudo o que sua planta precisa para crescer forte.</p></div>
+    <div class="scard"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Paisagismo</h3><p>Projetos completos para transformar jardins, áreas e empresas.</p></div>
+  </div></div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--leaf)">Para casa e para o seu negócio</span>
+    <h2 style="margin-top:1rem">Atacado e varejo, com preço que cabe</h2>
+    <p class="lead">Quer comprar uma planta ou montar um projeto inteiro? A gente atende você do mesmo jeito: com qualidade, variedade e bom atendimento.</p>
+    <div class="actions">
+      <a class="btn btn-green" href="https://wa.me/5534999367452?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20na%20Green%20Center%20Garden." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="btn btn-out" href="https://instagram.com/greencentergarden" target="_blank" rel="noopener">Ver no Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="info">
+        <span class="eyebrow">Venha nos visitar</span>
+        <h2 style="margin:.6rem 0 0">Onde estamos</h2>
+        <div class="rows">
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Av. João XXIII, 2560 · Pq. das Américas, Uberaba-MG</div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2z"/></svg> <a href="https://wa.me/5534999367452" target="_blank" rel="noopener">WhatsApp (34) 99936-7452</a></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 16.5v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1 3.2 2 2 0 0 1 3 1h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7 8.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7A2 2 0 0 1 21 16.5z"/></svg> Telefone fixo (34) 3325-7000</div>
+        </div>
+        <a class="btn btn-green" href="https://wa.me/5534999367452?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Green%20Center%20Garden." target="_blank" rel="noopener">Fazer um pedido</a>
+      </div>
+      <div class="map">
+        <iframe title="Mapa Green Center Garden" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.%20Jo%C3%A3o%20XXIII%2C%202560%2C%20Uberaba%20MG&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fbrand"><img src="logo.png" alt="">Green Center Garden</div>
+  <p>Paisagismo e Floricultura · Uberaba-MG</p>
+  <div class="flinks">
+    <a href="/bio">Todos os links</a>
+    <a href="https://instagram.com/greencentergarden" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://facebook.com/greencentergarden" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://wa.me/5534999367452" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <div class="zeb">© <span id="ano">2026</span> Green Center Garden · Desenvolvido por <a href="https://zebubit.com.br" target="_blank" rel="noopener">Zebubit Assessoria</a></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5534999367452?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Green%20Center%20Garden." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20z"/></svg>
+</a>
+<script>
+  document.getElementById('ano').textContent=new Date().getFullYear();
+  var nav=document.querySelector('.nav');addEventListener('scroll',function(){nav.classList.toggle('scrolled',scrollY>40)},{passive:true});
+</script>
+</body>
+</html>
