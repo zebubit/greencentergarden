@@ -1,171 +1,427 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Center Garden · Links</title>
-<meta name="description" content="Green Center Garden, paisagismo e floricultura em Uberaba-MG. Plantas no atacado e varejo, flores, árvores frutíferas, vasos e acessórios.">
-<meta name="theme-color" content="#0f3d24">
-<meta property="og:title" content="Green Center Garden · Paisagismo e Floricultura">
-<meta property="og:description" content="Plantas no atacado e varejo em Uberaba-MG. Tudo para o seu jardim.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>Green Center Garden | Floricultura e Paisagismo em Uberaba</title>
+<meta name="description" content="Green Center Garden: plantas no atacado e varejo, flores, orquídeas, palmeiras, vasos e paisagismo em Uberaba-MG. Nota 4,9 no Google. Peça seu orçamento pelo WhatsApp.">
+<meta name="theme-color" content="#06120B">
+<link rel="canonical" href="https://greencentergarden.com.br/bio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Green Center Garden | Uberaba-MG">
+<meta property="og:description" content="Plantas, flores e paisagismo no atacado e varejo. Orçamento pelo WhatsApp.">
+<meta property="og:image" content="https://greencentergarden.com.br/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/img/favicon.png">
+<link rel="preload" as="image" href="/img/hero.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GardenStore","name":"Green Center Garden","url":"https://greencentergarden.com.br","telephone":"+5534999367452","address":{"@type":"PostalAddress","streetAddress":"Av. João XXIII, 2560, Parque das Américas","addressLocality":"Uberaba","addressRegion":"MG","postalCode":"38045-100","addressCountry":"BR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"71"},"sameAs":["https://www.instagram.com/greencentergarden/","https://facebook.com/greencentergarden"]}</script>
 <style>
-  :root{
-    --green:#2e7d32; --green-d:#1b5e20; --green-deep:#0f3d24; --leaf:#8bc34a;
-    --cream:#f6f3ea; --card:#ffffff; --ink:#26312a; --mut:#6c7a70;
-    --line:rgba(27,94,32,.14); --gold:#c8a24a;
-    --serif:'Fraunces',Georgia,serif; --sans:'Nunito Sans',system-ui,sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:var(--sans);color:var(--ink);min-height:100vh;padding:0 0 50px;-webkit-font-smoothing:antialiased;
-    background:radial-gradient(120% 60% at 80% 0%, #e7f0e1 0%, #f6f3ea 45%, #eef3e8 100%);background-attachment:fixed}
-  a{text-decoration:none;color:inherit}
-  img{display:block;max-width:100%}
-  .wrap{width:100%;max-width:480px;margin:0 auto;padding:0 22px}
 
-  .profile{text-align:center;padding:46px 0 20px}
-  .avatar{width:118px;height:118px;border-radius:50%;margin:0 auto 16px;background:#fff;border:3px solid #fff;
-    box-shadow:0 14px 36px rgba(27,94,32,.22);display:grid;place-items:center;overflow:hidden}
-  .avatar img{width:100%;height:100%;object-fit:contain;padding:5px}
-  .profile h1{font-family:var(--serif);font-weight:600;font-size:1.95rem;color:var(--green-deep);line-height:1.1}
-  .profile .tag{font-size:.92rem;color:var(--green);font-weight:700;margin-top:5px}
-  .profile .bio{font-size:.9rem;color:var(--mut);margin:12px auto 0;max-width:340px;line-height:1.55}
-  .hours{margin-top:11px;display:inline-block;font-size:.82rem;font-weight:700;color:var(--green-d);background:rgba(46,125,50,.1);padding:5px 14px;border-radius:999px}
-  .socials{display:flex;gap:10px;justify-content:center;margin-top:16px}
-  .socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;background:#fff;transition:.2s}
-  .socials a:hover{border-color:var(--green);transform:translateY(-2px)}
-  .socials svg{width:21px;height:21px;color:var(--green-d)}
+:root{--bg:#06120B;--bg2:#0A1C11;--card:#0E2316;--or:#6BCB84;--or2:#B4E8C2;--gold:#E2C27A;--cream:#F3EEDF;--ink:#F3EEDF;--soft:#B3C2B6;--linha:rgba(140,214,160,.24);--head:'Fraunces',Georgia,serif;--serif:'Inter',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:hidden;max-width:100%}
+body{background:radial-gradient(120% 55% at 50% 0%,#123A22 0%,var(--bg) 62%) no-repeat,var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100svh}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:3px solid var(--or2);outline-offset:3px;border-radius:14px}
+.wrap{max-width:480px;margin:0 auto;padding-bottom:110px;position:relative}
 
-  .sec{display:block;font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--green-d);margin:24px 4px 12px;font-weight:600}
+/* HERO */
+.hero{position:relative;height:min(80svh,640px);min-height:500px;overflow:hidden;border-radius:0 0 40px 40px;background:#0A1C11}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:slide 20s infinite}
+.hero img:nth-child(1){opacity:1;animation-delay:0s}
+.hero img:nth-child(2){animation-delay:5s}
+.hero img:nth-child(3){animation-delay:10s}
+.hero img:nth-child(4){animation-delay:15s}
+@keyframes slide{0%{opacity:0;transform:scale(1.06)}5%{opacity:1}25%{opacity:1}31%{opacity:0;transform:scale(1)}100%{opacity:0}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,18,11,.5) 0%,rgba(6,18,11,0) 28%,rgba(6,18,11,.25) 55%,rgba(6,18,11,.97) 100%)}
+.selo{position:absolute;top:calc(14px + env(safe-area-inset-top));left:14px;z-index:3;display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(6,18,11,.66);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.22);font-weight:600;font-size:14px}
+.selo .est{color:var(--gold);letter-spacing:1px}
+.perfil{position:relative;z-index:2;margin-top:-190px;padding:0 20px;text-align:center}
+.avatar{width:116px;height:116px;border-radius:50%;display:block;margin:0 auto 12px;border:3px solid var(--bg);box-shadow:0 0 0 3px var(--gold),0 0 34px rgba(107,203,132,.45);object-fit:cover;background:#fff}
+h1{font-family:var(--head);font-weight:600;font-size:38px;line-height:1.05;letter-spacing:-.5px}
+h1 span{display:block;font-family:var(--serif);font-style:normal;font-weight:600;text-transform:none;font-size:18px;letter-spacing:0;color:var(--or2);margin-top:6px}
+.sub{color:var(--cream);font-size:16px;font-weight:500;margin-top:10px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:14px}
+.chips span{border:1px solid var(--linha);background:rgba(14,35,22,.85);padding:6px 13px;border-radius:999px;font-size:13.5px;font-weight:600;color:#D6EEDC}
 
-  .links{display:flex;flex-direction:column;gap:12px}
-  .card{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;
-    padding:14px 16px;box-shadow:0 6px 18px rgba(27,94,32,.08);transition:transform .2s,box-shadow .2s,border-color .2s;
-    opacity:0;transform:translateY(12px);animation:rise .5s ease forwards}
-  .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(27,94,32,.16);border-color:var(--green)}
-  .card .ic{width:44px;height:44px;border-radius:12px;flex-shrink:0;display:grid;place-items:center;background:#eef5e8}
-  .card .ic svg{width:23px;height:23px;color:var(--green-d)}
-  .card .t{flex:1;min-width:0}
-  .card .title{font-weight:700;font-size:.97rem;color:var(--ink)}
-  .card .sub{font-size:.78rem;color:var(--mut);margin-top:1px}
-  .card .arr{color:var(--mut)}
-  .card.feat{background:linear-gradient(120deg,#2e7d32,#1b5e20);border-color:transparent;box-shadow:0 12px 30px rgba(27,94,32,.32)}
-  .card.feat .ic{background:rgba(255,255,255,.2)} .card.feat .ic svg{color:#fff}
-  .card.feat .title{color:#fff} .card.feat .sub{color:rgba(255,255,255,.85)} .card.feat .arr{color:#fff}
-  @keyframes rise{to{opacity:1;transform:none}}
-  .links .card:nth-child(1){animation-delay:.05s}.links .card:nth-child(2){animation-delay:.1s}
-  .links .card:nth-child(3){animation-delay:.15s}.links .card:nth-child(4){animation-delay:.2s}
-  .links .card:nth-child(5){animation-delay:.25s}.links .card:nth-child(6){animation-delay:.3s}
-  .links .card:nth-child(7){animation-delay:.35s}.links .card:nth-child(8){animation-delay:.4s}
+/* BOTÕES */
+.links{display:flex;flex-direction:column;gap:12px;padding:0 16px;margin-top:24px}
+.lk{display:flex;align-items:center;gap:14px;min-height:66px;padding:12px 18px;border-radius:20px;border:1px solid var(--linha);background:var(--card);transition:transform .25s,border-color .25s,box-shadow .25s;touch-action:manipulation}
+.lk:hover,.lk:active{transform:translateY(-3px);border-color:var(--or);box-shadow:0 14px 30px rgba(0,0,0,.4)}
+.lk svg{flex:0 0 28px;width:28px;height:28px;fill:none;stroke:var(--or);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.lk b{display:block;font-weight:700;font-size:17px;line-height:1.25}
+.lk small{display:block;font-size:14px;color:var(--soft);margin-top:2px;font-weight:500}
+.lk--main{position:relative;overflow:hidden;min-height:78px;background:linear-gradient(120deg,#1E7A3E,#7FD796,#1E7A3E);background-size:200% 100%;border-color:rgba(255,255,255,.5);color:#04140A;animation:cor 5s ease-in-out infinite,pulso 2.4s ease-in-out infinite}
+.lk--main b{font-size:20px;color:#04140A}.lk--main small{color:#0B3019;opacity:1;font-weight:600}.lk--main svg{stroke:#04140A;width:32px;height:32px;flex-basis:32px}
+.lk--main::after{content:"";position:absolute;top:-20%;bottom:-20%;left:-60%;width:36%;background:linear-gradient(100deg,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));transform:skewX(-20deg);animation:flash 3.2s ease-in-out infinite;pointer-events:none}
+@keyframes flash{0%{left:-60%}55%,100%{left:130%}}
+@keyframes cor{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes pulso{0%,100%{box-shadow:0 0 0 0 rgba(107,203,132,0),0 10px 26px rgba(30,122,62,.3)}50%{box-shadow:0 0 0 8px rgba(107,203,132,.22),0 14px 34px rgba(30,122,62,.42)}}
 
-  .cta-titulo{text-align:center;margin:30px 0 12px;font-size:.82rem;font-weight:700;color:var(--green-deep)}
-  .bio-cta{display:flex;align-items:center;gap:13px;width:100%;padding:13px 15px;border-radius:14px;background:#fff;
-    border:1px dashed rgba(27,94,32,.4);color:var(--ink);transition:transform .22s,border-color .22s}
-  .bio-cta + .bio-cta{margin-top:10px}
-  .bio-cta:hover{transform:translateY(-2px);border-color:var(--green)}
-  .bio-cta__icon{font-size:1.3rem;flex-shrink:0}
-  .bio-cta__title{font-family:var(--serif);font-style:italic;font-size:1.02rem;line-height:1.2;color:var(--green-d)}
-  .bio-cta__sub{font-size:.72rem;color:var(--mut);margin-top:1px}
-  .gratis-pisca{display:inline-block;color:#1b5e20;font-style:normal;font-weight:800;font-size:.78rem;letter-spacing:.06em;margin-left:8px;animation:pisca 1s steps(1) infinite}
-  @keyframes pisca{0%,49%{opacity:1}50%,100%{opacity:.12}}
+/* TÍTULOS */
+.sec{margin-top:46px}
+.sec-t{font-family:var(--head);font-weight:600;font-size:30px;line-height:1.12;letter-spacing:-.3px;text-align:center;padding:0 18px}
+.sec-t i{display:block;font-family:var(--serif);font-style:normal;font-weight:500;font-size:15px;letter-spacing:0;text-transform:none;color:var(--or2);margin-top:4px}
+.sec-t::after{content:"";display:block;width:54px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--or),var(--gold));margin:12px auto 0}
 
-  .foot{text-align:center;margin-top:28px;font-size:.78rem;color:var(--mut);line-height:1.7}
-  .foot .z{color:#c8a24a;font-weight:800}.foot .b{color:#2e7d32;font-weight:800}
+/* LINHAS */
+.tours{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px;margin-top:20px}
+.tour{position:relative;display:block;aspect-ratio:3/4;border-radius:24px;overflow:hidden;border:1px solid var(--linha);box-shadow:0 12px 30px rgba(0,0,0,.4);transition:transform .25s}
+.tour:active,.tour:hover{transform:translateY(-3px)}
+.tour img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tour::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,18,11,.95) 0%,rgba(6,18,11,.25) 62%,rgba(6,18,11,0) 100%)}
+.tour .tx{position:absolute;left:18px;right:18px;bottom:16px;z-index:2}
+.tour b{display:block;font-family:var(--head);font-weight:600;font-size:23px;line-height:1.1}
+.tour small{display:block;font-size:13.5px;color:#e4efe6;margin-top:4px;font-weight:500;line-height:1.35}
+.tour .go{position:absolute;z-index:2;top:14px;right:14px;background:var(--or);color:#04140A;font-weight:700;font-size:13px;padding:7px 12px;border-radius:999px;box-shadow:0 6px 16px rgba(30,122,62,.45)}
+.mais-cen{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:0 18px;margin-top:16px}
+.mais-cen span{border:1px solid var(--linha);background:rgba(14,35,22,.85);padding:7px 14px;border-radius:999px;font-size:14px;font-weight:600;color:#D6EEDC}
 
-  .wa-float{position:fixed;bottom:20px;right:20px;width:54px;height:54px;border-radius:50%;background:#25D366;
-    display:grid;place-items:center;box-shadow:0 8px 24px rgba(37,211,102,.5);z-index:50;transition:.2s}
-  .wa-float:hover{transform:scale(1.08)} .wa-float svg{width:30px;height:30px;fill:#fff}
-  @media(prefers-reduced-motion:reduce){.card{opacity:1;transform:none;animation:none}}
+/* REELS */
+.reels{display:flex;gap:12px;overflow-x:auto;padding:0 16px 8px;margin-top:20px;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.reels::-webkit-scrollbar{display:none}
+.reel{flex:0 0 58%;max-width:250px;scroll-snap-align:center;position:relative;aspect-ratio:9/16;border-radius:22px;overflow:hidden;border:1px solid var(--linha);background:#0A1C11}
+.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,18,11,.9) 0%,rgba(6,18,11,0) 45%)}
+.play{position:absolute;z-index:2;top:50%;left:50%;width:62px;height:62px;margin:-31px 0 0 -31px;border-radius:50%;background:rgba(107,203,132,.94);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.play svg{width:26px;height:26px;fill:#04140A;margin-left:3px}
+.reel .cap{position:absolute;z-index:2;left:12px;right:12px;bottom:12px;font-size:14px;font-weight:600;line-height:1.3}
+
+/* PASSOS */
+.passos{display:grid;gap:10px;padding:0 16px;margin-top:20px}
+.passo{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--linha);border-radius:18px;padding:14px 16px}
+.passo em{flex:0 0 40px;height:40px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-family:var(--head);font-weight:700;font-size:19px;background:linear-gradient(135deg,var(--or),var(--or2));color:#04140A}
+.passo b{display:block;font-size:16.5px}
+.passo small{color:var(--soft);font-size:14px}
+
+/* GALERIA */
+.gal{columns:2;column-gap:10px;padding:0 16px;margin-top:20px}
+.gal button{display:block;width:100%;margin:0 0 10px;break-inside:avoid;border-radius:18px;overflow:hidden;border:2px solid rgba(255,255,255,.08);background:#0A1C11}
+.gal button img{display:block;width:100%;height:auto}
+.gal button.mais{display:none}
+.gal.aberta button.mais{display:block}
+.vermais{display:block;margin:6px auto 0;padding:14px 26px;border-radius:999px;border:1px solid var(--or);color:var(--or);font-weight:700;font-size:15.5px}
+.vermais[hidden]{display:none}
+
+/* GOOGLE */
+@property --gang{syntax:'<angle>';inherits:false;initial-value:0deg}
+.goo{--gang:0deg;margin:20px 16px 0;padding:22px 18px;text-align:center;border-radius:26px;border:3px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,conic-gradient(from var(--gang),#4285F4,#EA4335,#FBBC05,#34A853,#4285F4) border-box;animation:giraG 4s linear infinite}
+@keyframes giraG{to{--gang:360deg}}
+.goo .nota{font-family:var(--head);font-weight:700;font-size:56px;line-height:1}
+.goo .est{color:var(--gold);font-size:24px;letter-spacing:3px;margin-top:4px}
+.goo p{color:var(--soft);font-size:15px;margin-top:6px}
+.goo .bt{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 18px;border-radius:16px;font-weight:700;font-size:16px}
+.btn--g{background:#fff;color:#1f2a30}
+.btn svg.g{width:22px;height:22px}
+.depo{display:grid;gap:10px;padding:0 16px;margin-top:14px}
+.depo q{display:block;quotes:none;background:var(--card);border:1px solid var(--linha);border-left:4px solid var(--or);border-radius:14px;padding:13px 15px;font-size:15.5px;line-height:1.45}
+.depo q small{display:block;color:var(--soft);font-size:13px;margin-top:6px}
+
+/* MAPA */
+.mapa{margin:20px 16px 0;border-radius:24px;overflow:hidden;border:1px solid var(--linha);background:var(--card)}
+.mapa iframe{display:block;width:100%;height:240px;border:0;filter:grayscale(.35) contrast(1.05)}
+.mapa .end{padding:14px 16px;font-size:15px}
+.mapa .end b{display:block;font-size:16.5px;margin-bottom:2px}
+.mapa .end a{display:inline-flex;margin-top:10px;align-items:center;min-height:46px;padding:10px 18px;border-radius:14px;border:1px solid var(--or);color:var(--or);font-weight:700}
+
+/* REDES */
+.redes{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 16px;margin-top:20px}
+.rede{display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 8px;border-radius:18px;background:var(--card);border:1px solid var(--linha);font-weight:600;font-size:15px;text-align:center}
+.rede svg{width:26px;height:26px;fill:none;stroke:var(--or);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.rede small{color:var(--soft);font-weight:500;font-size:13px;overflow-wrap:anywhere}
+.rede--ig{grid-column:1 / -1;background:linear-gradient(45deg,#f09433,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888);border-color:transparent;flex-direction:row;justify-content:center;gap:12px;padding:18px}
+.rede--ig svg{stroke:#fff}.rede--ig small{color:#fff;opacity:.95}
+.aviso{font-size:13px;color:var(--soft);text-align:center;margin:22px 22px 0;line-height:1.55}
+
+/* RODAPÉ PADRÃO ZEBUBIT / BIOVENDA */
+.cta-t{text-align:center;font-family:var(--head);font-weight:600;font-size:24px;margin:46px 18px 14px}
+.bio-cta{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:18px;margin:0 16px 12px;background:linear-gradient(135deg,#050506,#18181b);border:1px dashed rgba(230,189,79,.6);transition:transform .25s}
+.bio-cta:hover{transform:translateY(-3px)}
+.bio-cta svg{flex:0 0 28px;width:28px;height:28px}
+.bio-cta .t{font-size:16.5px;font-weight:600;color:#fff;line-height:1.3}
+.bio-cta .s{font-size:13.5px;color:#b3aea6;margin-top:2px}
+.zb{color:#e6bd4f;font-weight:700}
+.bv{color:#C8FF00;font-weight:700}
+.gratis-pisca{display:inline-block;color:#fff;font-style:normal;font-weight:700;font-size:.82rem;letter-spacing:.06em;margin-left:11px;animation:piscaGratis 1s steps(1) infinite}
+@keyframes piscaGratis{0%,49%{opacity:1}50%,100%{opacity:.12}}
+.foot{text-align:center;margin-top:24px;padding:0 16px}
+.foot a{display:inline-block;padding:10px 18px;border-radius:999px;background:#050506;color:#b3aea6;font-size:13px}
+
+/* BARRA FIXA */
+.fixa{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;justify-content:center;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(0deg,rgba(6,18,11,.97) 55%,rgba(6,18,11,0));transform:translateY(130%);transition:transform .35s;pointer-events:none}
+.fixa.on{transform:none}
+.fixa a{pointer-events:auto;width:100%;max-width:452px;display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;border-radius:18px;background:linear-gradient(120deg,#1E7A3E,#7FD796);color:#04140A;font-weight:700;font-size:17.5px;box-shadow:0 10px 28px rgba(30,122,62,.45);border:1px solid rgba(255,255,255,.5)}
+.fixa svg{width:24px;height:24px;fill:none;stroke:#04140A;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(5,5,6,.97);display:none;align-items:center;justify-content:center;touch-action:pan-y}
+.lb.on{display:flex}
+.lb img{max-width:100vw;max-height:88svh;width:auto;height:auto;object-fit:contain;border-radius:8px}
+.lb button{position:absolute;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:26px;color:#fff}
+.lb .x{top:calc(14px + env(safe-area-inset-top));right:14px}
+.lb .pv{left:10px;top:50%;margin-top:-26px}.lb .nx{right:10px;top:50%;margin-top:-26px}
+.lb .ct{position:absolute;bottom:calc(16px + env(safe-area-inset-bottom));left:0;right:0;text-align:center;color:#b3aea6;font-size:14px}
+
+@media (prefers-reduced-motion:reduce){.hero img{animation:none}.hero img:not(:first-child){display:none}.lk--main,.lk--main::after,.goo,.gratis-pisca{animation:none}.lk,.bio-cta,.tour,.fixa{transition:none}}
+@media (min-width:700px){.hero{border-radius:0 0 48px 48px}}
+.av-w{position:relative;width:116px;margin:0 auto 12px}
+.av-w .avatar{margin:0}
+.chips span.g{border-color:var(--or);background:rgba(107,203,132,.18);color:#fff}
+.ilus{font-size:13px;color:var(--soft);text-align:center;margin-top:10px}
+#folhas{position:absolute;inset:0;z-index:1;pointer-events:none;width:100%;height:100%}
+
+.tour--w{grid-column:1 / -1;aspect-ratio:16/10}
+.tour .go{font-size:12px;padding:6px 10px;top:10px;right:10px}
+.tour .tx{left:14px;right:14px;bottom:13px}
+.loja{margin:20px 16px 0;border-radius:24px;overflow:hidden;border:1px solid var(--linha);background:var(--card)}
+.loja img{display:block;width:100%;height:auto;aspect-ratio:640/900;object-fit:cover}
+.loja-tx{padding:18px}
+.loja-tx p{font-size:16px;line-height:1.55;color:var(--cream)}
+.dono{display:flex;align-items:center;gap:12px;margin-top:14px;padding:12px 14px;border-radius:16px;border:1px solid var(--linha);background:rgba(6,18,11,.5)}
+.dono svg,.hor svg{flex:0 0 26px;width:26px;height:26px;fill:none;stroke:var(--gold);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.dono b{display:block;font-size:16px}.dono small{display:block;color:var(--soft);font-size:13.5px}
+.hor{display:flex;align-items:center;gap:10px;margin-top:12px;color:var(--cream);font-size:15px;line-height:1.4}
+.redes .rede:not(.rede--ig) svg{stroke:var(--or)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
 </style>
 </head>
 <body>
-
-<header class="profile wrap">
-  <div class="avatar"><img src="logo.png" alt="Green Center Garden"></div>
-  <h1>Green Center Garden</h1>
-  <div class="tag">Paisagismo · Floricultura · Uberaba-MG</div>
-  <p class="bio">🌱 Plantas no atacado e varejo. Flores, árvores frutíferas, vasos, insumos e tudo para o seu jardim.</p>
-  <div class="hours">🕗 Seg a Sex 8h às 18h · Sáb 8h às 14h</div>
-  <div class="socials">
-    <a href="https://instagram.com/greencentergarden" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-    <a href="https://facebook.com/greencentergarden" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
-    <a href="https://wa.me/5534999367452" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20z"/></svg></a>
-  </div>
-</header>
-
 <main class="wrap">
-  <span class="sec">Fale com a gente</span>
-  <div class="links">
-    <a class="card feat" href="https://wa.me/553491960792?text=Ol%C3%A1%20Bruna!%20Vim%20pela%20bio%20da%20Green%20Center%20Garden%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2z"/></svg></span>
-      <span class="t"><span class="title">Vendedora Bruna</span><span class="sub">Orçamento e atendimento no WhatsApp</span></span>
-      <span class="arr">↗</span>
-    </a>
-    <a class="card" href="https://wa.me/553491890026?text=Ol%C3%A1%20Vin%C3%ADcius!%20Vim%20pela%20bio%20da%20Green%20Center%20Garden%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2z"/></svg></span>
-      <span class="t"><span class="title">Vendedor Vinícius</span><span class="sub">Orçamento e atendimento no WhatsApp</span></span>
-      <span class="arr">↗</span>
-    </a>
-    <a class="card" href="https://wa.me/553433257000?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20setor%20financeiro%20da%20Green%20Center%20Garden." target="_blank" rel="noopener">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span>
-      <span class="t"><span class="title">Setor Financeiro</span><span class="sub">(34) 3325-7000</span></span>
-      <span class="arr">↗</span>
-    </a>
-    <a class="card" href="https://greencentergarden.com.br" target="_blank" rel="noopener">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke-linecap="round"/></svg></span>
-      <span class="t"><span class="title">Nosso site oficial</span><span class="sub">greencentergarden.com.br</span></span>
-      <span class="arr">↗</span>
-    </a>
-    <a class="card" href="https://www.google.com/maps/search/?api=1&query=Av.%20Jo%C3%A3o%20XXIII%2C%202560%2C%20Parque%20das%20Am%C3%A9ricas%2C%20Uberaba%20MG" target="_blank" rel="noopener">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-      <span class="t"><span class="title">Venha nos visitar</span><span class="sub">Av. João XXIII, 2560 · Pq. das Américas, Uberaba-MG</span></span>
-      <span class="arr">↗</span>
-    </a>
-    <a class="card" href="https://instagram.com/greencentergarden" target="_blank" rel="noopener">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
-      <span class="t"><span class="title">Instagram</span><span class="sub">@greencentergarden</span></span>
-      <span class="arr">↗</span>
-    </a>
-    <a class="card" href="https://facebook.com/greencentergarden" target="_blank" rel="noopener">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></span>
-      <span class="t"><span class="title">Facebook</span><span class="sub">Green Center Garden</span></span>
-      <span class="arr">↗</span>
-    </a>
-    <a class="card" href="https://instagram.com/glauber_capolis" target="_blank" rel="noopener">
-      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg></span>
-      <span class="t"><span class="title">Glauber Cápolis</span><span class="sub">@glauber_capolis · proprietário e paisagista</span></span>
-      <span class="arr">↗</span>
-    </a>
-  </div>
+  <section class="hero" aria-label="Green Center Garden">
+    <img src="/img/hero.webp" width="640" height="800" alt="Primavera laranja florida no viveiro" fetchpriority="high">
+    <img src="/img/h2.webp" width="640" height="800" alt="Trepadeira lilás" loading="lazy">
+    <img src="/img/h3.webp" width="640" height="800" alt="Primavera pink" loading="lazy">
+    <img src="/img/h4.webp" width="640" height="800" alt="Primavera vermelha em vaso grande" loading="lazy">
+    <canvas id="folhas" aria-hidden="true"></canvas>
+    <div class="selo"><span class="est" aria-hidden="true">★★★★★</span> 4,9 no Google</div>
+  </section>
 
-  <!-- CTA PADRÃO -->
-  <div class="cta-titulo">Quero um link da bio igual a esse</div>
-  <a class="bio-cta" href="https://wa.me/5534993421500?text=Ol%C3%A1%20Zebubit!%20Vim%20pela%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20link%20da%20bio%20igual%20pro%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">
-    <span class="bio-cta__icon">✨</span>
-    <div>
-      <div class="bio-cta__title">Feito pela <span style="color:#c8a24a;font-style:normal">Zebubit</span> <span class="gratis-pisca">PERSONALIZADA</span></div>
-      <div class="bio-cta__sub">uma bio feita à mão pra você</div>
+  <header class="perfil">
+    <div class="av-w"><img class="avatar" src="/img/avatar.webp" width="400" height="400" alt="Logo da Green Center Garden"></div>
+    <h1>Green Center Garden<span>floricultura e paisagismo</span></h1>
+    <p class="sub">Plantas no atacado e varejo em Uberaba-MG</p>
+    <div class="chips"><span class="g">4,9 no Google · 71 avaliações</span><span>Atacado e varejo</span><span>Paisagismo</span><span>Estacionamento</span></div>
+  </header>
+
+  <nav class="links" aria-label="Contatos">
+    <a class="lk lk--main" href="https://wa.me/553491960792?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M8.8 8.6c.3 3.1 2.6 5.4 5.8 5.8l1.1-1.2-1.7-1-.8.6c-.8-.4-1.5-1.1-1.9-1.9l.6-.8-1-1.7z"/></svg>
+      <span><b>Vendas</b><small>Orçamento e atendimento no WhatsApp</small></span>
+    </a>
+    <a class="lk" href="https://wa.me/553491890026?text=Ol%C3%A1%2C%20Vin%C3%ADcius%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M8.8 8.6c.3 3.1 2.6 5.4 5.8 5.8l1.1-1.2-1.7-1-.8.6c-.8-.4-1.5-1.1-1.9-1.9l.6-.8-1-1.7z"/></svg>
+      <span><b>Vendedor Vinícius</b><small>Orçamento e atendimento no WhatsApp</small></span>
+    </a>
+    <a class="lk" href="https://greencentergarden.com.br" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+      <span><b>Site oficial</b><small>greencentergarden.com.br</small></span>
+    </a>
+    <a class="lk" href="https://wa.me/553433257000?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20falar%20com%20o%20setor%20financeiro." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+      <span><b>Setor financeiro</b><small>(34) 3325-7000</small></span>
+    </a>
+    <a class="lk" href="https://maps.google.com/?cid=14168826807449657094" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span><b>Como chegar</b><small>Av. João XXIII, 2560 · Pq. das Américas</small></span>
+    </a>
+  </nav>
+
+  <section class="sec" aria-labelledby="t-linhas">
+    <h2 class="sec-t" id="t-linhas">O que você procura?<i>toque e peça seu orçamento</i></h2>
+    <div class="tours">
+      <a class="tour tour--w" href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento%20de%20plantas%20ornamentais." target="_blank" rel="noopener">
+        <img src="/img/t-ornamentais.webp" width="600" height="800" alt="Composição de folhagens em vasos" loading="lazy">
+        <span class="go">Orçamento</span>
+        <span class="tx"><b>Plantas ornamentais</b><small>Folhagens para dentro e fora de casa</small></span>
+      </a>
+      <a class="tour" href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento%20de%20flores." target="_blank" rel="noopener">
+        <img src="/img/t-flores.webp" width="600" height="800" alt="Rosa do deserto florida" loading="lazy">
+        <span class="go">Orçamento</span>
+        <span class="tx"><b>Flores</b><small>Rosas do deserto, gerânios, petúnias e mais</small></span>
+      </a>
+      <a class="tour" href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento%20de%20orqu%C3%ADdeas." target="_blank" rel="noopener">
+        <img src="/img/t-orquideas.webp" width="600" height="800" alt="Orquídea roxa" loading="lazy">
+        <span class="go">Orçamento</span>
+        <span class="tx"><b>Orquídeas</b><small>Várias espécies e cores</small></span>
+      </a>
+      <a class="tour" href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento%20de%20palmeiras%20e%20%C3%A1rvores." target="_blank" rel="noopener">
+        <img src="/img/t-palmeiras.webp" width="600" height="800" alt="Palmeiras no viveiro" loading="lazy">
+        <span class="go">Orçamento</span>
+        <span class="tx"><b>Palmeiras e árvores</b><small>De mudas a plantas de grande porte</small></span>
+      </a>
+      <a class="tour" href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento%20de%20um%20presente%20com%20plantas." target="_blank" rel="noopener">
+        <img src="/img/t-presentes.webp" width="600" height="800" alt="Arranjo de orquídeas para presente" loading="lazy">
+        <span class="go">Orçamento</span>
+        <span class="tx"><b>Presentes</b><small>Arranjos prontos para presentear</small></span>
+      </a>
+      <a class="tour" href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento%20de%20plantas%20pendentes." target="_blank" rel="noopener">
+        <img src="/img/t-pendentes.webp" width="600" height="800" alt="Plantas pendentes em cachepôs" loading="lazy">
+        <span class="go">Orçamento</span>
+        <span class="tx"><b>Plantas pendentes</b><small>Samambaias, jiboias e trepadeiras</small></span>
+      </a>
+      <a class="tour" href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento%20de%20vasos%20e%20cachep%C3%B4s." target="_blank" rel="noopener">
+        <img src="/img/t-vasos.webp" width="600" height="800" alt="Vasos de cimento e cerâmica" loading="lazy">
+        <span class="go">Orçamento</span>
+        <span class="tx"><b>Vasos e cachepôs</b><small>Cerâmica, cimento e decoração</small></span>
+      </a>
+      <a class="tour tour--w" href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento%20de%20um%20projeto%20de%20paisagismo." target="_blank" rel="noopener">
+        <img src="/img/t-paisagismo.webp" width="600" height="800" alt="Jardim com folhagens e pedriscos" loading="lazy">
+        <span class="go">Orçamento</span>
+        <span class="tx"><b>Paisagismo</b><small>Projeto para o seu jardim, casa ou empresa</small></span>
+      </a>
     </div>
+    <div class="mais-cen"><span>Árvores frutíferas</span><span>Gramas</span><span>Insumos e substratos</span><span>Suculentas</span></div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-videos">
+    <h2 class="sec-t" id="t-videos">Veja no Instagram<i>novidades que chegam toda semana</i></h2>
+    <div class="reels">
+      <a class="reel" href="https://www.instagram.com/reel/DeHOrkNtMko/" target="_blank" rel="noopener"><img src="/img/r1.webp" width="540" height="960" alt="Vídeo no Instagram: Palmeira imperial" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg></span><span class="cap">Palmeira imperial</span></a>
+      <a class="reel" href="https://www.instagram.com/reel/Db8Yuj8Ogqd/" target="_blank" rel="noopener"><img src="/img/r2.webp" width="540" height="960" alt="Vídeo no Instagram: Chegou caminhão de plantas" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg></span><span class="cap">Chegou caminhão de plantas</span></a>
+      <a class="reel" href="https://www.instagram.com/reel/DPjwwqUEudv/" target="_blank" rel="noopener"><img src="/img/r3.webp" width="540" height="960" alt="Vídeo no Instagram: Samambaias na loja" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg></span><span class="cap">Samambaias na loja</span></a>
+      <a class="reel" href="https://www.instagram.com/reel/DZ4_tO2OtU0/" target="_blank" rel="noopener"><img src="/img/r4.webp" width="540" height="960" alt="Vídeo no Instagram: Dia do orquidófilo" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg></span><span class="cap">Dia do orquidófilo</span></a>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-fotos">
+    <h2 class="sec-t" id="t-fotos">Direto do nosso viveiro<i>fotos reais da loja</i></h2>
+    <div class="gal" id="gal">
+      <button type="button"><img src="/img/g040.webp" data-full="/img/g040.webp" width="640" height="800" alt="Rosa do deserto pêssego" loading="lazy"></button>
+      <button type="button"><img src="/img/g042.webp" data-full="/img/g042.webp" width="640" height="800" alt="Petúnias pendentes" loading="lazy"></button>
+      <button type="button"><img src="/img/g048.webp" data-full="/img/g048.webp" width="640" height="800" alt="Gerânio pendente" loading="lazy"></button>
+      <button type="button"><img src="/img/g049.webp" data-full="/img/g049.webp" width="640" height="800" alt="Guaimbê" loading="lazy"></button>
+      <button type="button"><img src="/img/g083.webp" data-full="/img/g083.webp" width="640" height="800" alt="Costela-de-adão" loading="lazy"></button>
+      <button type="button"><img src="/img/g073.webp" data-full="/img/g073.webp" width="640" height="800" alt="Caladium" loading="lazy"></button>
+      <button type="button"><img src="/img/g067.webp" data-full="/img/g067.webp" width="640" height="800" alt="Orquídea bambu" loading="lazy"></button>
+      <button type="button"><img src="/img/g104.webp" data-full="/img/g104.webp" width="640" height="800" alt="Ficus lyrata" loading="lazy"></button>
+      <button type="button" class="mais"><img src="/img/g079.webp" data-full="/img/g079.webp" width="640" height="800" alt="Suculentas" loading="lazy"></button>
+      <button type="button" class="mais"><img src="/img/g084.webp" data-full="/img/g084.webp" width="640" height="800" alt="Dracena" loading="lazy"></button>
+      <button type="button" class="mais"><img src="/img/g098.webp" data-full="/img/g098.webp" width="640" height="800" alt="Comigo-ninguém-pode" loading="lazy"></button>
+      <button type="button" class="mais"><img src="/img/g121.webp" data-full="/img/g121.webp" width="640" height="800" alt="Dipladênia amarela" loading="lazy"></button>
+      <button type="button" class="mais"><img src="/img/g130.webp" data-full="/img/g130.webp" width="640" height="800" alt="Fitônias" loading="lazy"></button>
+      <button type="button" class="mais"><img src="/img/g019.webp" data-full="/img/g019.webp" width="640" height="800" alt="Vasos e folhagens" loading="lazy"></button>
+    </div>
+    <button type="button" class="vermais" id="vermais">Ver mais fotos</button>
+  </section>
+
+  <section class="sec" aria-labelledby="t-loja">
+    <h2 class="sec-t" id="t-loja">Feita por gente que ama o verde<i>a equipe Green Center</i></h2>
+    <div class="loja">
+      <img src="/img/equipe.webp" width="640" height="900" alt="Equipe da Green Center Garden" loading="lazy">
+      <div class="loja-tx">
+        <p>Da muda para a janela ao projeto completo do seu jardim. Atendemos casas, empresas e paisagistas com variedade, qualidade e preço justo, no atacado e no varejo.</p>
+        <a class="dono" href="https://www.instagram.com/glauber_capolis/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span><b>Glauber Cápolis</b><small>proprietário e paisagista · @glauber_capolis</small></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-goo">
+    <h2 class="sec-t" id="t-goo">Quem visita, recomenda<i>avaliações reais no Google</i></h2>
+    <div class="goo">
+      <div class="nota">4,9</div>
+      <div class="est" aria-hidden="true">★★★★★</div>
+      <p>71 avaliações no Google · conte como foi a sua visita</p>
+      <div class="bt">
+        <a class="btn btn--g" href="https://maps.google.com/?cid=14168826807449657094" target="_blank" rel="noopener">
+          <svg class="g" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+          Avaliar no Google
+        </a>
+      </div>
+    </div>
+    <div class="depo">
+      <q>Eu e minha esposa fomos bem atendidos por todos os funcionários. O local tem grande variedade de mudas frutíferas, flores, plantas ornamentais, insumos, vasos. Ótimo ambiente, bem organizado e bons preços. Recomendo!<small>Igor Cabral · Google</small></q>
+      <q>Excelente atendimento. Funcionários são muito gentis. Produtos têm ótima qualidade e o preço está dentro do padrão de mercado.<small>Gislaine Oliveira · Google</small></q>
+      <q>Atendimento de primeira e muitas variedades. Fácil acesso e estacionamento interno.<small>Antonio Neto · Google</small></q>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-onde">
+    <h2 class="sec-t" id="t-onde">Venha nos visitar<i>Parque das Américas · Uberaba</i></h2>
+    <div class="mapa">
+      <iframe title="Mapa da Green Center Garden" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Green+Center+Garden,+Av.+Jo%C3%A3o+XXIII,+2560,+Parque+das+Am%C3%A9ricas,+Uberaba+-+MG,+38045-100&amp;output=embed"></iframe>
+      <div class="end"><b>Green Center Garden</b>Av. João XXIII, 2560 · Parque das Américas<br>Uberaba/MG, 38045-100
+        <div class="hor"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Seg a sex 8h às 18h<br>Sáb 8h às 14h</span></div>
+        <a href="https://maps.google.com/?cid=14168826807449657094" target="_blank" rel="noopener">Como chegar</a></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-redes">
+    <h2 class="sec-t" id="t-redes">Acompanhe a Green Center<i>plantas novas e dicas de cultivo</i></h2>
+    <div class="redes">
+      <a class="rede rede--ig" href="https://www.instagram.com/greencentergarden/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8"/></svg>
+        <span><b>Seguir no Instagram</b><br><small>@greencentergarden</small></span>
+      </a>
+      <a class="rede" href="https://facebook.com/greencentergarden" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H6.5v3.5H9V21h3.5v-8.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg>Facebook<small>Green Center Garden</small></a>
+      <a class="rede" href="https://www.instagram.com/glauber_capolis/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Glauber Cápolis<small>@glauber_capolis</small></a>
+    </div>
+  </section>
+
+  <h2 class="cta-t">Quero um link da bio igual a esse</h2>
+  <a class="bio-cta" href="https://wa.me/5534993421500?text=Ol%C3%A1%21%20Vim%20pela%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20link%20da%20bio%20premium%20igual%20pra%20mim." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/></svg>
+    <div><div class="t">Feito pela <span class="zb">Zebubit</span> <em class="gratis-pisca">PERSONALIZADA</em></div><div class="s">feita à mão pra você</div></div>
   </a>
   <a class="bio-cta" href="https://biovenda.app.br/ref/greencentergarden" target="_blank" rel="noopener">
-    <span class="bio-cta__icon">⚡</span>
-    <div>
-      <div class="bio-cta__title">Ou crie a sua no <span style="color:#2e7d32;font-style:normal">BioVenda</span> <span class="gratis-pisca">GRÁTIS</span></div>
-      <div class="bio-cta__sub">você mesmo monta em 2 minutos</div>
-    </div>
+    <svg viewBox="0 0 24 24" fill="none" stroke="#C8FF00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+    <div><div class="t">Ou crie a sua no <span class="bv">BioVenda</span> <em class="gratis-pisca">GRÁTIS</em></div><div class="s">seu link da bio em minutos</div></div>
   </a>
-
-  <footer class="foot">
-    © <span id="ano">2026</span> Green Center Garden · Uberaba-MG<br>
-    Desenvolvido por <span class="z">Zebubit</span> · com <span class="b">BioVenda</span>
-  </footer>
+  <p class="foot"><a href="https://zebubit.com.br" target="_blank" rel="noopener">© 2026 Green Center Garden · Desenvolvido por <span class="zb">Zebubit</span> · com <span class="bv">BioVenda</span></a></p>
 </main>
 
-<a class="wa-float" href="https://wa.me/5534999367452?text=Ol%C3%A1!%20Vim%20pela%20bio%20da%20Green%20Center%20Garden." target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20z"/></svg>
-</a>
-<script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+<div class="fixa" id="fixa"><a href="https://wa.me/5534999367452?text=Ol%C3%A1%21%20Vim%20pelo%20link%20da%20bio%20da%20Green%20Center%20Garden%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M8.8 8.6c.3 3.1 2.6 5.4 5.8 5.8l1.1-1.2-1.7-1-.8.6c-.8-.4-1.5-1.1-1.9-1.9l.6-.8-1-1.7z"/></svg>Pedir orçamento no WhatsApp</a></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button type="button" class="x" id="lbx" aria-label="Fechar">×</button>
+  <button type="button" class="pv" id="lbp" aria-label="Foto anterior">‹</button>
+  <img id="lbi" alt="">
+  <button type="button" class="nx" id="lbn" aria-label="Próxima foto">›</button>
+  <div class="ct" id="lbc"></div>
+</div>
+
+<script>
+(function(){
+  var fixa=document.getElementById('fixa'), alvo=document.querySelector('.lk--main');
+  function barra(){ var r=alvo.getBoundingClientRect(); fixa.classList.toggle('on', r.bottom<0); }
+  window.addEventListener('scroll',barra,{passive:true}); barra();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.tour,.reel,.depo q,.loja,.goo').forEach(function(el){el.classList.add('rv');io.observe(el)});
+  var gal=document.getElementById('gal'), vm=document.getElementById('vermais');
+  vm.addEventListener('click',function(){ gal.classList.add('aberta'); vm.hidden=true; });
+  var lb=document.getElementById('lb'), li=document.getElementById('lbi'), lc=document.getElementById('lbc');
+  var btns=[].slice.call(gal.querySelectorAll('button')), cur=0, ult=null;
+  function mostra(i){ cur=(i+btns.length)%btns.length; var im=btns[cur].querySelector('img'); li.src=im.getAttribute('data-full'); li.alt=im.alt; lc.textContent=(cur+1)+' de '+btns.length; }
+  function abre(i){ ult=document.activeElement; gal.classList.add('aberta'); vm.hidden=true; lb.classList.add('on'); document.body.style.overflow='hidden'; mostra(i); document.getElementById('lbx').focus(); }
+  function fecha(){ lb.classList.remove('on'); document.body.style.overflow=''; if(ult) ult.focus(); }
+  btns.forEach(function(b,i){ b.addEventListener('click',function(){ abre(i); }); });
+  document.getElementById('lbx').addEventListener('click',fecha);
+  document.getElementById('lbp').addEventListener('click',function(){ mostra(cur-1); });
+  document.getElementById('lbn').addEventListener('click',function(){ mostra(cur+1); });
+  lb.addEventListener('click',function(e){ if(e.target===lb) fecha(); });
+  document.addEventListener('keydown',function(e){ if(!lb.classList.contains('on')) return; if(e.key==='Escape') fecha(); if(e.key==='ArrowLeft') mostra(cur-1); if(e.key==='ArrowRight') mostra(cur+1); });
+  var x0=null;
+  lb.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; },{passive:true});
+  lb.addEventListener('touchend',function(e){ if(x0===null) return; var d=e.changedTouches[0].clientX-x0; if(Math.abs(d)>50) mostra(cur+(d<0?1:-1)); x0=null; });
+})();
+</script>
+<script>
+(function(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;var c=document.getElementById('folhas'),x=c.getContext('2d'),w,h,d=[],run=true;
+var cores=['rgba(122,206,140,','rgba(168,230,184,','rgba(244,160,190,','rgba(255,196,120,'];
+function sz(){var r=Math.min(devicePixelRatio,1.5);w=c.clientWidth;h=c.clientHeight;c.width=w*r;c.height=h*r;x.setTransform(r,0,0,r,0,0)}sz();addEventListener('resize',sz);
+function nova(t){return{x:Math.random()*w,y:t?Math.random()*h:-20,s:4+Math.random()*7,v:.4+Math.random()*.9,a:Math.random()*6.28,va:(Math.random()-.5)*.04,o:Math.random()*6.28,c:cores[Math.random()*4|0],al:.35+Math.random()*.45}}
+for(var i=0;i<26;i++)d.push(nova(1));
+new IntersectionObserver(function(e){run=e[0].isIntersecting;if(run)lp()}).observe(c);
+function lp(){if(!run)return;x.clearRect(0,0,w,h);for(var k=0;k<d.length;k++){var p=d[k];p.o+=.02;p.y+=p.v;p.x+=Math.sin(p.o)*.6;p.a+=p.va;
+x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillStyle=p.c+p.al+')';x.beginPath();x.ellipse(0,0,p.s,p.s*.45,0,0,6.28);x.fill();x.restore();
+if(p.y>h+20)d[k]=nova(0)}requestAnimationFrame(lp)}lp()})();
+</script>
 </body>
 </html>
